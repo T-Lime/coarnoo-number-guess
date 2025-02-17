@@ -40,6 +40,9 @@ button{
     border: 1px solid black;
     color: black;
 }
+#playBtn:disabled{
+    background-color: gray;
+}
 
 button:hover{
     background-color: greenyellow;
