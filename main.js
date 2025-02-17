@@ -56,12 +56,14 @@ function play(){
        resultArea.textContent = "정답입니다!"
        gameImg.src = "images/bingo.gif"
        gameOver=true
+       playBtn.disabled = true;
+      return;
     }
 
     history.push(userValue)
     historyText.textContent = `지금까지 입력한 숫자:${history}`;
 
-    if(chances === 0 && userValue !== computerNum){
+    if(chances === 0){
       resultArea.textContent ="Game Over";
       gameImg.src = "images/gameOver.gif"
       gameOver=true
