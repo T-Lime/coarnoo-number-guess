@@ -79,6 +79,7 @@ function reset(){
    gameImg.src = "images/게임준비.gif"
    history = [];
    historyText.textContent = `지금까지 입력한 숫자:${history}`;
+   gameOver=false;
    playBtn.disabled = false;
 }
 
