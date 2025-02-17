@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>숫자 맞추기 게임!</h1>
-    <div id="result-area">결과가 나온다</div>
-    <input id="userInput" type="number"/>
-    <button id="playBtn">Go!</button>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>숫자 맞추기 게임~</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>짱구와 숫자 맞추기!</h1>
+      <img id="game-image" src="images/게임준비.gif" alt="">
+      <div id="result-area">과연 결과는?!</div>
+      <div id="chance-area">기회는 총 10회 입니다!</div>
+      <input id="userInput" type="number" placeholder="1~100까지의 숫자를 입력해주세요"/>
+      <button id="playBtn">Go!</button>
+      <div id="history-text"></div>
+    </div>
+    
+    <button id="reset-button">리셋!</button>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

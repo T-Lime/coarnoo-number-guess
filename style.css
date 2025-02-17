@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/SE-b6150796-69b0-4fee-86b1-0ad629253779.jpg)
+}
+
+img{
+    width: 40vh;
+    height: 30vh;
+}
+h1{
+    color: white;
+    margin: 3vh;
+}
+.game-container{
+    width: 80vw;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#userInput{
+    width: 25vh;
+    height: 4vh;
+}
+
+button{
+    width: 5vh;
+    height: 4vh;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+button:hover{
+    background-color: greenyellow;
+    color: blue;
+}
+
+#result-area, #chance-area{
+    margin: 1vh;
+    color: white;
+}
+
+#reset-button{
+    width: 10vh;
+    margin: 3vh;
+}
+
+#history-text{
+    margin: 1vh;
+    color: yellow;
+}
+
+@media screen and (max-width:550px){
+    h1{
+        font-size: 5vw;
+    }
+    img{
+        width: 25vh;
+        height: 30vh;
+    }
+    div{
+        font-size: 4vw;
+    }
+}
