@@ -16,12 +16,14 @@ let resetBtn = document.getElementById("reset-button");
 let chanceArea = document.getElementById("chance-area");
 let gameImg = document.getElementById("game-image");
 let historyText = document.getElementById("history-text");
-let chances = 10;
+let bingoText = document.getElementById("bingo");
+let chances = 3;
 let gameOver = false;
 let history =[];
 
 function pickRandomNum(){
     computerNum = Math.floor(Math.random() * 100)+1;
+    bingoText.textContent = `정답 : ${computerNum}`
     console.log("정답", computerNum);
 }
 
@@ -59,7 +61,9 @@ function play(){
     history.push(userValue)
     historyText.textContent = `지금까지 입력한 숫자:${history}`;
 
-    if(chances == 0){
+    if(chances === 0 && userValue !== computerNum){
+      resultArea.textContent ="Game Over";
+      gameImg.src = "images/gameOver.gif"
       gameOver=true
     }
     if (gameOver==true){
@@ -74,7 +78,7 @@ function reset(){
    pickRandomNum()
 
    resultArea.textContent = "과연 결과는?!"
-   chances = 10;
+   chances = 3;
    chanceArea.textContent = `남은 기회는 : ${chances}`;
    gameImg.src = "images/게임준비.gif"
    history = [];

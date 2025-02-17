@@ -64,13 +64,18 @@ button:hover{
     color: yellow;
 }
 
+#bingo{
+    font-size: 0.8rem;
+    color: red;
+}
+
 @media screen and (max-width:550px){
     h1{
         font-size: 5vw;
     }
     img{
         width: 25vh;
-        height: 30vh;
+        height: 20vh;
     }
     div{
         font-size: 3vw;
